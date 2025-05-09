@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
-'''Description: This program stores a name and age, then prints a sentence.'''
 
+# Define the objects
 name = 'Isaac'
 age = 72
-print(name + ' is ' + str(age) + ' years old!')
+
+# Print the desired output
+print(f'{name} is {age} years old!')
+
