@@ -24,20 +24,21 @@ test_a (__main__.lab1c.test_a)
 test_a1 (__main__.lab1c.test_a1)
 [Lab 1] - [Investigation 4] - integer objects & printing - Test for correct shebang line: ./lab1c.py ... ok
 test_b (__main__.lab1c.test_b)
-[Lab 1] - [Investigation 4] - integer objects & printing - Test output for correct output "Isaac is 72 years old!": ./lab1c.py ... ok
-test_0 (__main__.lab1d.test_0)
-[Lab 1] - [Investigation 5] - math operators - Test for file creation: ./lab1d.py ... ok
-test_a (__main__.lab1d.test_a)
-[Lab 1] - [Investigation 5] - math operators - Test for errors running: ./lab1d.py ... ok
-test_a1 (__main__.lab1d.test_a1)
-[Lab 1] - [Investigation 5] - math operators - Test for correct shebang line: ./lab1d.py ... ok
-test_b (__main__.lab1d.test_b)
-[Lab 1] - [Investigation 5] - math operators - Test output for correct output "10 + 2 * 5 = 20": ./lab1d.py ... ok
+[Lab 1] - [Investigation 4] - integer objects & printing - Test output for correct output "Isaac is 72 years old!": ./lab1c.py ... FAIL
+
+======================================================================
+FAIL: test_b (__main__.lab1c.test_b)
+[Lab 1] - [Investigation 4] - integer objects & printing - Test output for correct output "Isaac is 72 years old!": ./lab1c.py
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/kppatel43/ops445/lab1/lab-1-Kundan2009/./CheckLab1.py", line 163, in test_b
+    self.assertEqual(stdout, expected_output, msg=error_output)
+AssertionError: b'Isaac is 72 age years old! \n' != b'Isaac is 72 years old!\n' : output is not correct(HINT: pay attention to uppercase letters, spaces, and punctuation)
 
 ----------------------------------------------------------------------
-Ran 16 tests in 0.211s
+Ran 12 tests in 0.070s
 
-OK
+FAILED (failures=1)
 OPS445 Lab Report - System Information for running ./CheckLab1.py
 =================================================================
     User login name: kppatel43
@@ -47,5 +48,5 @@ OPS445 Lab Report - System Information for running ./CheckLab1.py
     Python version:  3.12.3 (main, Feb  4 2025, 14:48:35) [GCC 13.3.0]
     OS Platform: linux
     Working Directory: /home/kppatel43/ops445/lab1/lab-1-Kundan2009
-    Start at: Fri May  9 19:12:25 2025
+    Start at: Fri May  9 19:56:23 2025
 =================================================================
